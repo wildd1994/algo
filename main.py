@@ -16,7 +16,7 @@ def check_cycle(graph):
     color = {key: 0 for key in graph.keys()}
     for key in graph.keys():
         if color[key] == 0:
-            if check(int(key), graph, color) is not None:
+            if check(key, graph, color) is not None:
                 return True
     return False
 
